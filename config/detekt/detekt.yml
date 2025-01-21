@@ -555,7 +555,7 @@ potential-bugs:
   ExplicitGarbageCollectionCall:
     active: true
   HasPlatformType:
-    active: true
+    active: false
   IgnoredReturnValue:
     active: true
     restrictToConfig: true
@@ -744,6 +744,9 @@ style:
     ignoreOverridableFunction: true
     ignoreActualFunction: true
     excludedFunctions: []
+  LibraryCodeMustSpecifyReturnType:
+    active: true
+    allowOmitUnit: false
   LoopWithTooManyJumpStatements:
     active: true
     maxJumpCount: 1

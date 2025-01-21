@@ -1,5 +1,5 @@
 [versions]
-agp = "8.8.0"
+agp = "8.7.3"
 androidx_activity_compose = "1.9.3"
 androidx_test = "1.6.1"
 androidx_test_ext = "1.2.1"
@@ -35,6 +35,8 @@ compose_ui_tooling = { module = "androidx.compose.ui:ui-tooling" }
 compose_ui_test_junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
 compose_ui_test_manifest = { module = "androidx.compose.ui:ui-test-manifest" }
 detekt_formatting = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt" }
+detekt_libraries = { module = "io.gitlab.arturbosch.detekt:detekt-rules-libraries", version.ref = "detekt" }
+
 espresso_core = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso.core" }
 agp = { module = "com.android.tools.build:gradle", version.ref = "agp" }
 kgp = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }

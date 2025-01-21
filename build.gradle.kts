@@ -16,6 +16,7 @@ allprojects {
 }
 
 val detektFormatting = libs.detekt.formatting
+val detektLibraries = libs.detekt.libraries
 
 subprojects {
     apply {
@@ -28,6 +29,7 @@ subprojects {
 
     dependencies {
         detektPlugins(detektFormatting)
+        detektPlugins(detektLibraries)
     }
 }
 

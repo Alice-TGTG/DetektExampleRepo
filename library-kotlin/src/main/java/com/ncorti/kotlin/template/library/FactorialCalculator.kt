@@ -1,5 +1,7 @@
 package com.ncorti.kotlin.template.library
 
+import java.util.Date
+
 object FactorialCalculator {
     private const val MAX_FACTORIAL_64BIT = 20
 
@@ -10,4 +12,17 @@ object FactorialCalculator {
             input == 0L -> temp
             else -> computeFactorial(input - 1, temp * input)
         }
+
+    // member functions
+    fun foo1(input: Int) = input
+    internal fun foo2(input: Int) = input
+
+    val strs = listOf("foo, bar")
+    fun bar() = Date().time
+
+}
+
+class Parser {
+    fun bar() = Date().time
+    fun parse() = System.getProperties()
 }
